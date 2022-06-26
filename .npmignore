@@ -1,0 +1,7 @@
+tests/
+**/*.spec.*
+src/
+.env*
+**/types/*
+.editorconfig
+.eslintrc.json

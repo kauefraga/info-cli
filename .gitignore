@@ -106,3 +106,4 @@ dist
 # bindata build directory
 .bindata/
 .bin/
+bin/

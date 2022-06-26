@@ -31,6 +31,7 @@
 # options:
   -f --format   # set time output -- default h:m
   -l --location # set location to fetch of weatherapi -- required
+
 # examples:
 infy -l London
 infy --format h:m:s --location London

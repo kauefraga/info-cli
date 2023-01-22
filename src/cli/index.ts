@@ -1,14 +1,15 @@
 #! /usr/bin/env node
 
+import 'dotenv/config';
 import { clear } from 'node:console';
 
 import minimist from 'minimist';
 import chalk from 'chalk';
 
-import Logo from './components/Logo';
-import Time from './components/Time';
-import Weather from './components/Weather';
-import getWeather from './services/getWeather';
+import Logo from './components/logo';
+import Time from './components/time';
+import Weather from './components/weather';
+import getWeather from './api/get-weather';
 
 async function cli() {
   const args = minimist(process.argv, {

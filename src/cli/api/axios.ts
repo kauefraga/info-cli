@@ -1,5 +1,5 @@
 import axios from 'axios';
 
-export const weatherAPI = axios.create({
+export const api = axios.create({
   baseURL: 'https://api.weatherapi.com/v1',
 });

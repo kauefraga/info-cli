@@ -1,4 +1,4 @@
-import { WeatherData } from '../types/Weather';
+import { WeatherData } from '../../types/weather';
 
 class Weather {
   constructor(

@@ -1,9 +1,6 @@
-import 'dotenv/config';
-import { weatherAPI } from '../axios';
+import { api } from './axios';
 
-import { WeatherAPIResponse } from '../types/Weather';
-
-// TODO: transform this into a class
+import type { WeatherAPIResponse } from '../../types/weather';
 
 let cachedWeather: WeatherAPIResponse | null = null;
 
@@ -14,7 +11,7 @@ async function getWeather(location: string): Promise<WeatherAPIResponse> {
 
   const uri = `current.json?key=${process.env.WEATHER_API_SECRET}&q=${location}`;
 
-  const response = await weatherAPI.get(uri);
+  const response = await api.get(uri);
 
   cachedWeather = response.data;
 

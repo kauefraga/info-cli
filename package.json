@@ -4,10 +4,7 @@
   "version": "1.0.2",
   "author": "Kauê Fraga Rodrigues <kauefragarodrigues456@gmail.com>",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/kauefraga/info-cli.git"
-  },
+  "repository": "https://github.com/kauefraga/info-cli.git",
   "homepage": "https://github.com/kauefraga/info-cli",
   "bugs": {
     "url": "https://github.com/kauefraga/info-cli/issues"
@@ -26,11 +23,10 @@
     "infy": "./bin/index.js"
   },
   "scripts": {
+    "prepublishOnly": "tsc",
     "build": "tsc",
-    "start": "node ./bin/index.js",
-    "dev": "tsnd --respawn --transpile-only ./src/index.ts",
-    "test": "jest",
-    "test:e2e": "jest ./tests/e2e.spec.ts"
+    "start": "node .",
+    "dev": "tsnd --respawn --transpile-only ./src/index.ts"
   },
   "devDependencies": {
     "@types/figlet": "^1.5.4",
